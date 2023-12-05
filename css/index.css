@@ -1,0 +1,232 @@
+:root{
+   --main-color : #4672bd;
+   --second-color:gainsboro;
+   --third-color:darkslateblue;
+   --background-color:#d4dae554;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* start components */
+.main-heading {
+    text-align: center;
+   
+}
+
+.main-heading h1 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: -1;
+}
+
+.main-heading h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+}
+
+.main-heading h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: cornflowerblue;
+}
+/* end components */
+
+
+/* start nav bar */
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-icon{
+    color:#0f1395
+}
+.navbar {
+    background-color: var(--main-color);
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--second-color) ;
+}
+.logo-color{
+ color:var(--second-color)  ;
+}
+
+
+/* end nav bar */
+
+/*  start landing  */
+
+.landing img{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.landing .sign span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+     
+}
+.landing .sign span a{
+    color: var(--second-color);
+}
+@media(max-width:799px) {
+    .landing img {
+
+        height: 50vh;
+
+    }
+    .landing .sign span {
+           
+         top: 30%;  
+        }
+}
+.landing .sign p:hover{
+    background-color: #e7dcb6;
+    color:#0768b5;
+    transition: 0.3;
+    -webkit-transition: 0.3;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+}
+/*  end landing  */
+
+/*  start best cources  */
+.best-cources{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+.card{
+    min-height: 440px;
+    margin-top: 20px;
+}
+.course_image{
+    position: relative;
+    perspective: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+ .course_image img{
+    width: 100%;
+  transition: 0.5s;
+   
+  
+}
+.course_image:hover img{
+    transform: translateZ(5px);
+    
+}
+ .price{
+
+    top: 10%;
+    right: 0%;
+    background-color: var(--third-color);
+
+}
+ .buy{
+        padding:15px 20px; 
+        top: 48%;
+        z-index: 20;
+        left: 50%;
+        transform : translateX(-50%);
+        background-color: darkslateblue;
+        color: white;
+        display:none;
+}
+ .buy:hover{
+background-color: black;
+}
+
+/*  end best cources  */
+
+/* start testimonials */
+
+.testimonials{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--background-color);
+}
+
+.carousel-inner {
+    /* position: static; */
+    background-color: #6db0ed;
+    min-height: 400px;
+}
+.carousel-control-next, .carousel-control-prev {
+    top:160px
+}
+
+/* end testimonials */
+/* start section question */
+.questions{
+   margin-top: 70px;
+   margin-bottom: 70px;
+   background-color: var(--background-color);
+}
+.container{
+    min-height: 650px;
+}
+
+/* end section question */
+/* start section team */
+.team{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: var(--background-color); 
+}
+/* end section team */
+/*  */
+.footer{
+    background-color: var(--main-color);
+
+}
+.footer a {
+color: #052554;
+}
+.footer a:hover {
+    color: #394c68;
+    }
+.social{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.facebook{
+color: #072750;
+}
+.instagram{
+color: #550f85;
+}
+.youtube{
+color: #ff0000;
+}

@@ -1,0 +1,71 @@
+/* start privacy-policy */
+
+.container .content{
+    margin-top: 100px;
+        direction: rtl;
+}
+.container .content h3 {
+    color: blue;
+        text-decoration: underline;
+}
+/* end privacy-policy */
+
+/* start my-cources */
+
+
+
+/* start my-cources */
+
+/* start profile settings page */
+    /* start avatar section */
+    .avatar-lable{
+       height: 170px;
+       width: 170px;
+       cursor: pointer;
+       margin-top: 100px;
+    /* margin-right: 50%;
+    transform: translateX(-50%); */
+    /* margin-right: 5px; */
+    
+    }
+    /* end avatar section */
+
+
+/* end profile settings page */
+
+
+/* start questions page */
+    /* start section all-questions */
+        .questions-block{
+            overflow:hidden;
+            scroll-behavior: smooth;
+        }
+
+    /* start section all-questions */
+
+
+/* end questions page */
+
+/* start cart page */
+
+.empty-cart{
+ margin-top: 100px;
+ margin-bottom: 120px;
+}
+
+.full-cart{
+    margin-top: 70px;
+    margin-right: 30px;
+}
+
+.full-cart .delet-icon {
+    cursor: pointer;
+    border-radius: 40%;
+    /* background-color: aqua; */
+    /* color: yellow; */
+}
+.full-cart .delet-icon:hover{
+    color: white;
+    background-color: red;
+}
+/* end cart page */
